@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.shananton.biglist'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(platform('org.junit:junit-bom:5.8.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter:5.8.0')
+    testImplementation('org.junit.jupiter:junit-jupiter-params:5.8.0')
+}
+
+test {
+    useJUnitPlatform()
+}
